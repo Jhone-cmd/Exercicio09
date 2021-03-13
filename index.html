@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questões</title>
+    <script src="operaçao.js"></script>
+    <style>
+        
+        input {
+            display: block;
+        }
+    
+        h1 {
+            font-size: 16px;
+            margin-bottom: 0px;
+            margin-top: 20px;
+        }
+    
+        span {
+            font-size: 13px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: darkblue;
+        }
+        p{
+            margin: 0px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="questao">
+        <h1>Questã 01:<span> Somar 2 valores <a href="https://www.urionlinejudge.com.br/repository/UOJ_1001.html" target="_blank">link da questão</a></span></h1>
+        <p id="valor">Resultado: A soma dos 2 valores é xx.</p>
+
+        <label for="a" id="a">A</label>
+        <input type="text" id="n1" >
+        <label for="b" id="b">B</label>
+        <input type="text" id="n2">
+        <br>
+        <input type="button" onclick="soma()" value="Calcular">
+        <br>
+        <input  type="button" onclick="limpar1()" value="Limpar Campos">        
+          
+    </div>
+    
+    <div class="questao">
+        <h1>Questã 02:<span> Calcular o salário de um funcionário <a href="https://www.urionlinejudge.com.br/repository/UOJ_1008.html" target="_blank">link da questão</a></span></h1>
+        <p id="salário">Resultado: O funcionario xxxxxx vai receber xxx.</p>
+        
+        <label for="nomefuncionario">Nome Funcionário</label>
+        <input type="text" id="nomefuncionario">
+        <label for="horastrabalhadas">Valor Hora</label>
+        <input type="text" id="valorhora">
+        <label for="">Total de Horas Trabalhado</label>
+        <input type="text" id="horastrabalho">
+        <br>
+        <input type="button" onclick="salário()" value="Calcular">
+        <br>
+        <input  type="button" onclick="limpar2()" value="Limpar Campos">
+
+        
+    </div>
+    <div class="questao">
+        <h1>Questã 03:<span> Calcular o consumo médio de um automóvel <a href="https://www.urionlinejudge.com.br/repository/UOJ_1014.html" target="_blank">link da questão</a></span></h1>
+        <p id="consumo">Resultado: O automóvel fez o consumo médio de xxx.</p>
+        
+        <label for="distancia">Distância percorrida</label>
+        <input type="text" id="distancia">
+        <label for="combustivel">Combustível gasto</label>
+        <input type="text" id="combustivel">
+        <br>
+        <input type="button" onclick="consumomédio()" value="Calcular">
+        <br>
+        <input type="button"  onclick="limpar3()" value="Limpar Campos">
+        </div>
+    
+</body>
+</html>
